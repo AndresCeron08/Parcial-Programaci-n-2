@@ -18,9 +18,19 @@ public class Camara extends EquipoAudiovisual {
         this.poseeEstabilizador = poseeEstabilizador;
     }
 
-    public Camara (String resolucion, boolean poseeEstabilizador, String codigoUnico, String marca, String modelo, CondicionEquipo condicion){
-        super (codigoUnico, marca, modelo, condicion);
+    public Camara(String codigoUnico, String marca, String modelo, CondicionEquipo condicion, String resolucion, boolean poseeEstabilizador) {
+        super(codigoUnico, marca, modelo, condicion);
         this.resolucion = resolucion;
         this.poseeEstabilizador = poseeEstabilizador;
     }
+
+    @Override
+    public double calcularCosto(int horas) {
+        double costo = 12000 * horas;
+        if (poseeEstabilizador) {
+            costo += 15000;
+        }
+        return costo;
+}
+
 }
