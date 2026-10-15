@@ -1,8 +1,10 @@
 public abstract class EquipoAudiovisual {
+    public abstract double calcularCostoHora(int horas);
     private String codigoUnico;
     private String marca;
     private String modelo;
     private CondicionEquipo condicion;
+
 
     public String getCodigoUnico() {
         return codigoUnico;
@@ -12,16 +14,12 @@ public abstract class EquipoAudiovisual {
         return marca;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public String getModelo() {
+        return modelo;
     }
 
     public CondicionEquipo getCondicion() {
         return condicion;
-    }
-
-    public String getModelo() {
-        return modelo;
     }
 
     public void setCondicion(CondicionEquipo condicion) {
@@ -34,5 +32,4 @@ public abstract class EquipoAudiovisual {
         this.modelo = modelo;
         this.condicion = condicion;
     }
-    public abstract double calcularCostoPorHora();
 }
