@@ -25,7 +25,7 @@ public class Camara extends EquipoAudiovisual {
     }
 
     @Override
-    public double calcularCosto(int horas) {
+    public double calcularCostoHora(int horas) {
         double costo = 12000 * horas;
         if (poseeEstabilizador) {
             costo += 15000;
