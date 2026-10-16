@@ -2,20 +2,13 @@ public class kitIluminacion extends EquipoAudiovisual {
     private int cantidadLuces;
     private boolean controlInalam;
 
+
     public int getCantidadLuces() {
         return cantidadLuces;
     }
 
-    public void setCantidadLuces(int cantidadLuces) {
-        this.cantidadLuces = cantidadLuces;
-    }
-
     public boolean isControlInalam() {
         return controlInalam;
-    }
-
-    public void setControlInalam(boolean controlInalam) {
-        this.controlInalam = controlInalam;
     }
 
     public kitIluminacion(String codigoUnico, String marca, String modelo, CondicionEquipo condicion, int cantidadLuces, boolean controlInalam) {

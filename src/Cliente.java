@@ -1,6 +1,6 @@
 public class Cliente {
     private String nombre;
-    private String numIdentifiacion;
+    private String numIdentificacion;
     private String telefono;
     private String correo;
 
@@ -9,8 +9,8 @@ public class Cliente {
         return nombre;
     }
 
-    public String getNumIdentifiacion() {
-        return numIdentifiacion;
+    public String getNumIdentificacion() {
+        return numIdentificacion;
     }
 
     public String getTelefono() {
@@ -21,9 +21,9 @@ public class Cliente {
         return correo;
     }
 
-    public Cliente (String nombre, String numIdentifiacion, String telefono, String correo) {
+    public Cliente (String nombre, String numIdentificacion, String telefono, String correo) {
         this.nombre = nombre;
-        this.numIdentifiacion = numIdentifiacion;
+        this.numIdentificacion = numIdentificacion;
         this.telefono = telefono;
         this.correo = correo;
     }
